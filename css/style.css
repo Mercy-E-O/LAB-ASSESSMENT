@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+nav {
+    background-color: #1a1a2e;
+    padding: 15px 30px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+nav ul li a:hover {
+    color: #e94560;
+}
+#hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #16213e;
+    color: white;
+}
+#hero img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #e94560;
+}
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+#hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+#bio {
+    padding: 40px 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#bio h2 {
+    margin-bottom: 15px;
+    color: #1a1a2e;
+}
+.page-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 30px;
+}
+.page-content h1 {
+    font-size: 2rem;
+    color: #1a1a2e;
+    margin-bottom: 30px;
+}
+.about-section {
+    margin-bottom: 40px;
+}
+.about-section h2 {
+    color: #e94560;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+.about-section p {
+    line-height: 1.7;
+}
+.about-section ul {
+    padding-left: 20px;
+    line-height: 2;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 15px 25px;
+    text-align: left;
+    width: 33%;
+}
+table th {
+    background-color: #1a1a2e;
+    color: white;
+}
+table tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+EOFcat > css/style.css << 'EOF'
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+nav {
+    background-color: #1a1a2e;
+    padding: 15px 30px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+nav ul li a:hover {
+    color: #e94560;
+}
+#hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #16213e;
+    color: white;
+}
+#hero img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #e94560;
+}
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+#hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+#bio {
+    padding: 40px 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#bio h2 {
+    margin-bottom: 15px;
+    color: #1a1a2e;
+}
+.page-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 30px;
+}
+.page-content h1 {
+    font-size: 2rem;
+    color: #1a1a2e;
+    margin-bottom: 30px;
+}
+.about-section {
+    margin-bottom: 40px;
+}
+.about-section h2 {
+    color: #e94560;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+.about-section p {
+    line-height: 1.7;
+}
+.about-section ul {
+    padding-left: 20px;
+    line-height: 2;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 15px 25px;
+    text-align: left;
+    width: 33%;
+}
+table th {
+    background-color: #1a1a2e;
+    color: white;
+}
+table tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background-color: #16213e;
+}
+
+.project-card h3 {
+    padding: 15px 15px 5px;
+    color: #1a1a2e;
+}
+
+.project-card p {
+    padding: 0 15px 15px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.project-link {
+    display: inline-block;
+    margin: 0 15px 15px;
+    padding: 8px 16px;
+    background-color: #e94560;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.project-link:hover {
+    background-color: #1a1a2e;
+}
+
+.planner-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.planner-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.planner-input input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.planner-input input:focus {
+    outline: none;
+    border-color: #e94560;
+}
+
+.planner-input button {
+    padding: 10px 20px;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.planner-input button:hover {
+    background-color: #1a1a2e;
+}
+
+#taskList {
+    list-style: none;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    border-left: 4px solid #e94560;
+}
+
+.task-item.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-item span {
+    cursor: pointer;
+    flex: 1;
+}
+
+.task-item button {
+    padding: 5px 12px;
+    background-color: #1a1a2e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-item button:hover {
+    background-color: #e94560;
+}
+
+.contact-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #1a1a2e;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #e94560;
+}
+
+#contactForm button {
+    padding: 12px 30px;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#contactForm button:hover {
+    background-color: #1a1a2e;
+}
+
+#formMessage {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+}
