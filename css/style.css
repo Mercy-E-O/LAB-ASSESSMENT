@@ -386,3 +386,45 @@ table tr:nth-child(even) {
     font-weight: bold;
     font-size: 1rem;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    #hero {
+        padding: 40px 15px;
+    }
+
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .page-content {
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    table th, table td {
+        padding: 8px 10px;
+    }
+
+    .planner-input {
+        flex-direction: column;
+    }
+
+    .contact-container {
+        padding: 20px 15px;
+    }
+}
